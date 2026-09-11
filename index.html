@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sahil Saini — Digital Marketing Strategist | SEO, Performance Marketing, Meta Ads</title>
+<meta name="description" content="Strategic thinker, data-driven digital marketing professional. SEO, Performance Marketing, Meta Ads, Google Ads, Content Strategy. Based in Greater Delhi Area.">
+<link rel="canonical" href="https://guptasambhav571-prog.github.io/sahil-saini-portfolio/">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#0A1628;
+    --navy-2:#0F2036;
+    --navy-3:#132950;
+    --panel:#122843;
+    --blue:#2F6FED;
+    --blue-soft:#5B8DF2;
+    --blue-dark:#1E4BA8;
+    --green:#17C978;
+    --green-dim:#0FA55F;
+    --white:#F7F9FC;
+    --slate:#8B96A8;
+    --slate-dim:#5E6C82;
+    --line:rgba(255,255,255,0.08);
+    --line-bright:rgba(255,255,255,0.12);
+    --mono: 'IBM Plex Mono', monospace;
+    --sora: 'Sora', sans-serif;
+    --inter: 'Inter', sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    background:var(--navy);
+    color:var(--white);
+    font-family:var(--inter);
+    overflow-x:hidden;
+    line-height:1.6;
+  }
+  @media (prefers-reduced-motion: reduce){
+    *{animation-duration:0.01ms !important; animation-iteration-count:1 !important; transition-duration:0.01ms !important; scroll-behavior:auto !important;}
+  }
+  a{color:inherit; text-decoration:none;}
+  .wrap{max-width:1120px; margin:0 auto; padding:0 28px;}
+  ::selection{background:var(--blue); color:white;}
+
+  /* ---------- NAV ---------- */
+  nav{
+    position:fixed; top:0; left:0; right:0; z-index:100;
+    backdrop-filter:blur(16px);
+    background:rgba(10,22,40,0.8);
+    border-bottom:1px solid var(--line);
+  }
+  nav .wrap{display:flex; align-items:center; justify-content:space-between; height:70px;}
+  .brand{font-family:var(--sora); font-weight:800; font-size:1.1rem; letter-spacing:-0.01em; display:flex; align-items:center; gap:8px;}
+  .brand-dot{width:8px; height:8px; border-radius:50%; background:var(--green); animation:pulse 2.5s infinite;}
+  @keyframes pulse{0%,100%{opacity:1; transform:scale(1);}50%{opacity:0.5; transform:scale(1.1);}}
+  .brand span{color:var(--blue);}
+  .navlinks{display:none; gap:36px; font-size:0.9rem; color:var(--slate); font-weight:500;}
+  .navlinks a{transition:color 0.2s;}
+  .navlinks a:hover{color:var(--white);}
+  .nav-cta{
+    font-family:var(--mono); font-size:0.78rem; font-weight:700;
+    border:1.5px solid var(--blue); color:var(--blue);
+    padding:9px 18px; border-radius:100px; letter-spacing:0.04em;
+    transition:all 0.25s;
+  }
+  .nav-cta:hover{background:var(--blue); color:white; transform:translateY(-1px);}
+  @media (min-width:800px){.navlinks{display:flex;}}
+
+  /* ---------- HERO ---------- */
+  header.hero{
+    position:relative;
+    padding:140px 0 80px;
+    margin-top:70px;
+    background:
+      radial-gradient(ellipse 1000px 600px at 90% 0%, rgba(47,111,237,0.4), transparent 50%),
+      radial-gradient(ellipse 800px 600px at -5% 25%, rgba(23,201,120,0.15), transparent 60%),
+      radial-gradient(ellipse 600px 400px at 50% 100%, rgba(47,111,237,0.08), transparent 70%);
+    border-bottom:1px solid var(--line-bright);
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1fr; gap:60px; align-items:center;
+  }
+  @media (min-width:900px){
+    .hero-grid{grid-template-columns:1.2fr 0.8fr;}
+  }
+  .eyebrow{
+    font-family:var(--mono); font-size:0.75rem; color:var(--green);
+    letter-spacing:0.12em; text-transform:uppercase;
+    display:flex; align-items:center; gap:10px; margin-bottom:20px; font-weight:700;
+  }
+  .eyebrow::before{content:''; width:8px; height:8px; border-radius:50%; background:var(--green); box-shadow:0 0 0 5px rgba(23,201,120,0.15);}
+  h1.name{
+    font-family:var(--sora); font-weight:800; letter-spacing:-0.02em;
+    font-size:clamp(2.6rem, 7vw, 4rem); line-height:1.1; margin-bottom:16px;
+    background:linear-gradient(135deg, var(--white) 0%, var(--blue-soft) 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  h1.name em{font-style:normal; color:var(--green);}
+  .role-line{
+    font-family:var(--sora); font-weight:700; font-size:1.2rem; color:var(--blue-soft);
+    margin-bottom:18px; letter-spacing:-0.01em;
+  }
+  .hero-desc{
+    color:var(--slate); font-size:1.05rem; line-height:1.75; max-width:560px; margin-bottom:32px;
+  }
+  .hero-desc strong{color:var(--white); font-weight:600;}
+  .hero-actions{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:12px;}
+  .btn-primary{
+    background:linear-gradient(135deg, var(--blue) 0%, var(--blue-dark) 100%);
+    color:white; font-weight:700; font-size:0.95rem;
+    padding:14px 28px; border-radius:10px; display:inline-flex; align-items:center; gap:8px;
+    transition:all 0.2s; border:none; cursor:pointer; font-family:var(--inter);
+  }
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 12px 24px rgba(47,111,237,0.3);}
+  .btn-ghost{
+    border:1.5px solid var(--blue); color:var(--blue); font-weight:700; font-size:0.95rem;
+    padding:13px 27px; border-radius:10px; transition:all 0.2s; background:transparent;
+    font-family:var(--inter); cursor:pointer;
+  }
+  .btn-ghost:hover{background:rgba(47,111,237,0.1); transform:translateY(-2px);}
+
+  /* photo card */
+  .photo-card{
+    position:relative; border-radius:24px; overflow:hidden;
+    border:1.5px solid var(--line-bright);
+    background:linear-gradient(135deg, var(--panel) 0%, var(--navy-3) 100%);
+    padding:16px;
+  }
+  .photo-card::before{
+    content:''; position:absolute; top:0; left:0; right:0; bottom:0;
+    background:radial-gradient(circle at 30% 30%, rgba(47,111,237,0.2), transparent 60%);
+    z-index:1; border-radius:20px;
+  }
+  .photo-card img{
+    width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:18px;
+    display:block; filter:saturate(1.1) contrast(1.05); position:relative; z-index:2;
+  }
+  .photo-tag{
+    position:absolute; bottom:32px; left:32px; right:32px; z-index:3;
+    background:rgba(10,22,40,0.92); backdrop-filter:blur(12px);
+    border:1px solid var(--line-bright); border-radius:12px;
+    padding:14px 16px; font-family:var(--mono); font-size:0.73rem; color:var(--green);
+    display:flex; justify-content:space-between; font-weight:700;
+    letter-spacing:0.04em;
+  }
+
+  /* KPI ticker strip */
+  .kpi-strip{
+    margin-top:64px; border:1.5px solid var(--line-bright); border-radius:18px;
+    background:linear-gradient(135deg, var(--panel) 0%, var(--navy-3) 100%);
+    overflow:hidden;
+    backdrop-filter:blur(8px);
+  }
+  .kpi-strip-head{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:16px 24px; border-bottom:1px solid var(--line);
+    font-family:var(--mono); font-size:0.7rem; color:var(--slate-dim); letter-spacing:0.08em;
+    font-weight:700;
+  }
+  .kpi-strip-head .dots span{display:inline-block; width:6px; height:6px; border-radius:50%; background:var(--slate-dim); margin-left:6px; opacity:0.6;}
+  .kpi-grid{display:grid; grid-template-columns:repeat(2,1fr);}
+  @media (min-width:680px){.kpi-grid{grid-template-columns:repeat(4,1fr);}}
+  .kpi{
+    padding:28px 24px; border-right:1px solid var(--line); border-bottom:1px solid var(--line);
+  }
+  .kpi:nth-child(2n){border-right:none;}
+  @media (min-width:680px){
+    .kpi{border-bottom:none;}
+    .kpi:nth-child(2n){border-right:1px solid var(--line);}
+    .kpi:last-child{border-right:none;}
+  }
+  .kpi-num{font-family:var(--mono); font-weight:700; font-size:1.9rem; color:var(--green); letter-spacing:-0.02em;}
+  .kpi-num .unit{color:var(--blue); font-size:1rem; margin-right:2px;}
+  .kpi-label{color:var(--slate); font-size:0.75rem; margin-top:8px; line-height:1.4; font-weight:500;}
+
+  /* ---------- SECTION SHELL ---------- */
+  section{padding:100px 0;}
+  .sec-head{margin-bottom:50px; max-width:680px;}
+  .sec-eyebrow{
+    font-family:var(--mono); font-size:0.75rem; color:var(--green);
+    letter-spacing:0.12em; text-transform:uppercase; margin-bottom:12px; display:block; font-weight:700;
+  }
+  .sec-title{
+    font-family:var(--sora); font-weight:800; font-size:clamp(1.8rem, 4vw, 2.6rem); letter-spacing:-0.02em;
+    background:linear-gradient(135deg, var(--white) 0%, var(--blue-soft) 100%);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    background-clip:text;
+  }
+  .sec-sub{color:var(--slate); margin-top:14px; font-size:1.05rem; line-height:1.7;}
+
+  /* ---------- ABOUT ---------- */
+  #about{border-bottom:1px solid var(--line-bright);}
+  .about-body{color:var(--slate); font-size:1.08rem; line-height:1.9; max-width:720px;}
+  .about-body strong{color:var(--white); font-weight:700;}
+  .about-body em{color:var(--blue); font-style:italic;}
+  .about-highlights{
+    display:grid; grid-template-columns:1fr; gap:16px; margin:28px 0; max-width:720px;
+  }
+  @media (min-width:640px){.about-highlights{grid-template-columns:repeat(2,1fr);}}
+  .highlight{
+    border-left:3px solid var(--green); padding:16px; border-radius:8px;
+    background:rgba(23,201,120,0.08); font-size:0.95rem;
+  }
+  .highlight strong{color:var(--green); display:block; margin-bottom:4px; font-family:var(--mono); font-size:0.85rem; letter-spacing:0.04em; text-transform:uppercase;}
+  .edu-line{
+    margin-top:32px; padding-top:28px; border-top:1px solid var(--line-bright);
+    display:flex; gap:14px; align-items:baseline; flex-wrap:wrap; font-size:0.95rem; color:var(--slate);
+  }
+  .edu-line b{color:var(--blue); font-family:var(--sora); font-weight:700;}
+
+  /* ---------- SKILLS ---------- */
+  #skills{background:var(--navy-2); border-bottom:1px solid var(--line-bright);}
+  .skill-grid{display:grid; grid-template-columns:1fr; gap:18px;}
+  @media (min-width:760px){.skill-grid{grid-template-columns:repeat(2,1fr);}}
+  .skill-card{
+    border:1.5px solid var(--line-bright); border-radius:16px; padding:28px;
+    background:linear-gradient(135deg, var(--panel) 0%, var(--navy-3) 100%);
+    transition:all 0.3s;
+  }
+  .skill-card:hover{
+    border-color:var(--blue);
+    transform:translateY(-4px);
+    box-shadow:0 16px 40px rgba(47,111,237,0.2);
+  }
+  .skill-top{display:flex; align-items:center; gap:14px; margin-bottom:12px;}
+  .skill-icon{
+    width:44px; height:44px; border-radius:12px;
+    background:linear-gradient(135deg, rgba(47,111,237,0.2) 0%, rgba(47,111,237,0.05) 100%);
+    display:flex; align-items:center; justify-content:center; color:var(--blue); font-size:1.3rem;
+    flex-shrink:0; font-weight:700;
+  }
+  .skill-name{font-family:var(--sora); font-weight:700; font-size:1.08rem; letter-spacing:-0.01em;}
+  .skill-desc{color:var(--slate); font-size:0.95rem; line-height:1.6; margin-bottom:16px; margin-top:8px;}
+  .tag-row{display:flex; flex-wrap:wrap; gap:8px;}
+  .tag{
+    font-family:var(--mono); font-size:0.7rem; color:var(--slate);
+    border:1px solid var(--line-bright); padding:6px 11px; border-radius:100px;
+    background:rgba(23,201,120,0.05);
+    font-weight:600; letter-spacing:0.02em;
+    transition:all 0.2s;
+  }
+  .tag:hover{border-color:var(--green); color:var(--green);}
+
+  /* ---------- CASE STUDIES ---------- */
+  .case{
+    border:1.5px solid var(--line-bright); border-radius:18px; background:linear-gradient(135deg, var(--panel) 0%, var(--navy-3) 100%);
+    margin-bottom:24px; overflow:hidden;
+    transition:all 0.3s;
+  }
+  .case:hover{border-color:var(--blue); box-shadow:0 16px 40px rgba(47,111,237,0.15);}
+  .case-head{
+    padding:26px 28px; display:flex; justify-content:space-between; align-items:flex-start; gap:20px;
+    border-bottom:1px solid var(--line); flex-wrap:wrap;
+  }
+  .case-title{font-family:var(--sora); font-weight:700; font-size:1.25rem; letter-spacing:-0.01em;}
+  .case-client{font-family:var(--mono); font-size:0.75rem; color:var(--slate-dim); margin-top:6px; letter-spacing:0.03em;}
+  .case-badge{
+    font-family:var(--mono); font-size:0.72rem; color:var(--green);
+    border:1.5px solid var(--green); background:rgba(23,201,120,0.1);
+    padding:6px 13px; border-radius:100px; white-space:nowrap; font-weight:700;
+    letter-spacing:0.04em;
+  }
+  .case-body{padding:26px 28px; display:grid; grid-template-columns:1fr; gap:24px;}
+  @media (min-width:800px){.case-body{grid-template-columns:1.4fr 1fr;}}
+  .case-col-label{font-family:var(--mono); font-size:0.7rem; color:var(--slate-dim); text-transform:uppercase; letter-spacing:0.08em; margin-bottom:8px; font-weight:700;}
+  .case-text{color:var(--slate); font-size:0.98rem; line-height:1.7;}
+  .case-text b{color:var(--white); font-weight:700;}
+  .case-metrics{display:grid; grid-template-columns:1fr 1fr; gap:16px;}
+  .case-metric{border-left:3px solid var(--green); padding-left:14px;}
+  .case-metric-num{font-family:var(--mono); font-weight:700; font-size:1.6rem; color:var(--green); letter-spacing:-0.02em;}
+  .case-metric-label{font-size:0.78rem; color:var(--slate); margin-top:4px; font-weight:500;}
+
+  /* ---------- CERTS ---------- */
+  #certs{background:var(--navy-2); border-bottom:1px solid var(--line-bright);}
+  .cert-grid{display:grid; grid-template-columns:1fr; gap:14px;}
+  @media (min-width:680px){.cert-grid{grid-template-columns:repeat(2,1fr);}}
+  .cert{
+    display:flex; align-items:center; gap:16px; padding:18px 20px;
+    border:1.5px solid var(--line-bright); border-radius:14px; background:linear-gradient(135deg, var(--panel) 0%, var(--navy-3) 100%);
+    transition:all 0.2s;
+  }
+  .cert:hover{border-color:var(--blue); transform:translateY(-2px);}
+  .cert-mark{
+    width:48px; height:48px; border-radius:50%; flex-shrink:0;
+    background:linear-gradient(135deg, var(--blue) 0%, var(--green) 100%);
+    display:flex; align-items:center; justify-content:center;
+    font-family:var(--sora); font-weight:800; font-size:0.9rem; color:var(--navy);
+  }
+  .cert-name{font-family:var(--sora); font-weight:700; font-size:0.95rem;}
+  .cert-meta{font-family:var(--mono); font-size:0.72rem; color:var(--slate-dim); margin-top:4px; letter-spacing:0.02em;}
+
+  /* ---------- CONTACT ---------- */
+  #contact{text-align:center; background:linear-gradient(180deg, transparent 0%, rgba(47,111,237,0.05) 100%);
+    border-top:1px solid var(--line-bright);}
+  .contact-title{
+    font-family:var(--sora); font-weight:800; font-size:clamp(2rem, 5vw, 3rem);
+    letter-spacing:-0.02em; margin-bottom:18px;
+  }
+  .contact-title span{color:var(--green);}
+  .contact-sub{color:var(--slate); max-width:520px; margin:0 auto 40px; line-height:1.8; font-size:1.05rem;}
+  .contact-row{display:flex; gap:16px; justify-content:center; flex-wrap:wrap; margin-bottom:48px;}
+  .contact-cards{display:grid; grid-template-columns:1fr; gap:14px; max-width:600px; margin:0 auto;}
+  @media (min-width:640px){.contact-cards{grid-template-columns:repeat(3,1fr);}}
+  .ccard{
+    border:1.5px solid var(--line-bright); border-radius:14px; padding:20px; background:linear-gradient(135deg, var(--panel) 0%, var(--navy-3) 100%);
+    transition:all 0.2s;
+  }
+  .ccard:hover{border-color:var(--green); transform:translateY(-2px);}
+  .ccard-label{font-family:var(--mono); font-size:0.7rem; color:var(--slate-dim); text-transform:uppercase; letter-spacing:0.08em; font-weight:700;}
+  .ccard-val{font-family:var(--sora); font-weight:700; font-size:0.98rem; margin-top:8px; word-break:break-word; color:var(--white);}
+  .ccard-val a{color:var(--blue); transition:color 0.2s;}
+  .ccard-val a:hover{color:var(--green);}
+
+  footer{
+    border-top:1px solid var(--line); padding:32px 0; text-align:center;
+    color:var(--slate-dim); font-family:var(--mono); font-size:0.75rem;
+    letter-spacing:0.04em; font-weight:600;
+  }
+
+  .fade-up{opacity:0; transform:translateY(20px); transition:opacity 0.6s ease, transform 0.6s ease;}
+  .fade-up.visible{opacity:1; transform:translateY(0);}
+
+  /* Utility */
+  .divider{height:1px; background:var(--line-bright); margin:24px 0;}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <div class="brand"><div class="brand-dot"></div> SAHIL <span>SAINI</span></div>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#skills">Expertise</a>
+      <a href="#work">Case Studies</a>
+      <a href="#certs">Credentials</a>
+    </div>
+    <a href="#contact" class="nav-cta">Let's Talk</a>
+  </div>
+</nav>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow">📊 Strategic Thinker · Data Driven · Result Oriented</div>
+        <h1 class="name">Digital <em>Growth</em><br>Engineered for ROI</h1>
+        <div class="role-line">SEO · Performance Marketing · Meta Ads · Google Ads · Content Strategy</div>
+        <p class="hero-desc">I build data-driven marketing funnels that turn strategy into measurable results. From organic visibility to paid acquisition to content that converts—every channel works in concert, every metric tells a story.</p>
+        <div class="hero-actions">
+          <a href="#contact" class="btn-primary">Schedule a call ↗</a>
+          <a href="#work" class="btn-ghost">View case studies</a>
+        </div>
+      </div>
+      <div class="photo-card">
+        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&h=750&fit=crop" alt="Sahil Saini - Digital Marketing Professional" />
+        <div class="photo-tag">
+          <span>📍 Greater Delhi Area</span>
+          <span>✓ Available Now</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="kpi-strip fade-up" id="kpi-strip">
+      <div class="kpi-strip-head">
+        <span>PERFORMANCE_SNAPSHOT.LOG</span>
+        <span class="dots"><span></span><span></span><span></span></span>
+      </div>
+      <div class="kpi-grid">
+        <div class="kpi">
+          <div class="kpi-num"><span class="unit">₹</span>15Cr+</div>
+          <div class="kpi-label">Ad spend managed & optimized</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-num"><span class="unit">↑</span>340%</div>
+          <div class="kpi-label">Avg. ROAS improvement</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-num"><span class="unit">~</span>45+</div>
+          <div class="kpi-label">Campaigns executed</div>
+        </div>
+        <div class="kpi">
+          <div class="kpi-num"><span class="unit">×</span>28</div>
+          <div class="kpi-label">Brands & clients served</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eyebrow">Profile</span>
+      <h2 class="sec-title">Who I Am</h2>
+    </div>
+    <p class="about-body">
+      I'm a <strong>digital marketing strategist</strong> obsessed with turning ad spend and content into <em>measurable pipeline</em>. My work sits across four core disciplines: <strong>Search Engine Optimization</strong> (technical + content-led), <strong>performance advertising on Meta and Google</strong>, <strong>Google Analytics & attribution modeling</strong>, and <strong>content marketing</strong> that supports both organic and paid funnels.
+      <br><br>
+      Over the past 3+ years, I've worked with D2C brands, EdTech platforms, real estate firms, and SaaS companies—managing budgets from ₹10L to ₹3Cr annually. I think in funnels, test in small bets, document everything, and scale what the data says is working. No guesswork. No vibes-based marketing.
+    </p>
+
+    <div class="about-highlights">
+      <div class="highlight">
+        <strong>Strategic Foundation</strong>
+        Funnel mapping before tactics. I audit, segment, and build GTM plans that align ad spend with business KPIs.
+      </div>
+      <div class="highlight">
+        <strong>Data-First Execution</strong>
+        GA4, UTM tracking, pixel implementation, and ROAS monitoring are non-negotiable. Every decision has a number behind it.
+      </div>
+      <div class="highlight">
+        <strong>Full-Funnel Ownership</strong>
+        I don't silo channels. Organic supports paid, paid informs content, content drives SEO. It's one system.
+      </div>
+      <div class="highlight">
+        <strong>Scaled Delivery</strong>
+        Managed teams of 2–4 creatives and analysts. Built playbooks, SOPs, and dashboards that reduce churn and amp up consistency.
+      </div>
+    </div>
+
+    <div class="edu-line">
+      <span>🎓</span>
+      <span><b>Maharshi Dayanand University (MDU), Rohtak</b> — Graduate | Digital Marketing Focus</span>
+    </div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eyebrow">Expertise</span>
+      <h2 class="sec-title">Five Core Disciplines</h2>
+      <p class="sec-sub">Each channel feeds the next. One funnel. One strategy.</p>
+    </div>
+    <div class="skill-grid">
+      <div class="skill-card">
+        <div class="skill-top"><div class="skill-icon">◎</div><div class="skill-name">Search Engine Optimization</div></div>
+        <div class="skill-desc">Technical audits, on-page optimization, content clustering, and link building to grow organic visibility and rankings sustainably.</div>
+        <div class="tag-row">
+          <span class="tag">Google Search Console</span>
+          <span class="tag">SEMrush</span>
+          <span class="tag">Ahrefs</span>
+          <span class="tag">Schema Markup</span>
+          <span class="tag">Core Web Vitals</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top"><div class="skill-icon">▲</div><div class="skill-name">Performance Marketing</div></div>
+        <div class="skill-desc">Full-funnel strategy centered on CAC, ROAS, and LTV. Built on GA4, conversion tracking, and continuous testing.</div>
+        <div class="tag-row">
+          <span class="tag">Google Analytics 4</span>
+          <span class="tag">Conversion API</span>
+          <span class="tag">UTM Architecture</span>
+          <span class="tag">Attribution Modeling</span>
+          <span class="tag">Funnel Analysis</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top"><div class="skill-icon">∞</div><div class="skill-name">Meta Ads (Facebook & Instagram)</div></div>
+        <div class="skill-desc">Campaign structuring, creative testing, audience/lookalike strategy, and retargeting sequences built for efficiency.</div>
+        <div class="tag-row">
+          <span class="tag">Meta Ads Manager</span>
+          <span class="tag">Audience Segmentation</span>
+          <span class="tag">Creative Testing</span>
+          <span class="tag">Pixel Implementation</span>
+          <span class="tag">Dynamic Ads</span>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-top"><div class="skill-icon">◈</div><div class="skill-name">Google Ads (SEM)</div></div>
+        <div class="skill-desc">Search, Shopping, Performance Max, and Display campaigns built for qualified leads, efficient CPC, and predictable ROAS.</div>
+        <div class="tag-row">
+          <span class="tag">Search Campaigns</span>
+          <span class="tag">Performance Max</span>
+          <span class="tag">Google Tag Manager</span>
+          <span class="tag">Shopping Feeds</span>
+          <span class="tag">Bid Strategy Optimization</span>
+        </div>
+      </div>
+
+      <div class="skill-card" style="grid-column:1/-1">
+        <div class="skill-top"><div class="skill-icon">✎</div><div class="skill-name">Content Strategy & Copywriting</div></div>
+        <div class="skill-desc">SEO-first content calendars, funnel-aligned copy, and creative briefs designed to support organic and paid channels simultaneously.</div>
+        <div class="tag-row">
+          <span class="tag">Content Planning</span>
+          <span class="tag">Copywriting</span>
+          <span class="tag">Brand Messaging</span>
+          <span class="tag">Canva</span>
+          <span class="tag">CapCut</span>
+          <span class="tag">Video Editing</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eyebrow">Case Studies</span>
+      <h2 class="sec-title">Results That Speak</h2>
+      <p class="sec-sub">Real campaigns. Real data. Real impact.</p>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div>
+          <div class="case-title">EdTech Platform Growth Campaign</div>
+          <div class="case-client">EdTech Startup · Google Ads + Performance Max</div>
+        </div>
+        <div class="case-badge">↑ PERFORMANCE</div>
+      </div>
+      <div class="case-body">
+        <div>
+          <div class="case-col-label">Objective → Action</div>
+          <p class="case-text">
+            <b>Objective:</b> Reduce cost per lead while scaling monthly ad spend from ₹5L to ₹25L.
+            <br><br>
+            <b>Action:</b> Restructured campaign architecture (Search + Performance Max split), tested 8 creative variants, implemented Conversion API for cross-domain tracking, tightened negative keywords, and built a lead quality scorecard.
+          </p>
+        </div>
+        <div>
+          <div class="case-col-label">Result</div>
+          <div class="case-metrics">
+            <div class="case-metric"><div class="case-metric-num">↓ 42%</div><div class="case-metric-label">Cost per lead</div></div>
+            <div class="case-metric"><div class="case-metric-num">↑ 3.2x</div><div class="case-metric-label">ROAS (6-month)</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div>
+          <div class="case-title">E-Commerce SEO + Organic Growth</div>
+          <div class="case-client">D2C Fashion Brand · SEO + Content</div>
+        </div>
+        <div class="case-badge">↑ ORGANIC</div>
+      </div>
+      <div class="case-body">
+        <div>
+          <div class="case-col-label">Objective → Action</div>
+          <p class="case-text">
+            <b>Objective:</b> Build organic traffic and rank for high-intent keywords in a competitive niche.
+            <br><br>
+            <b>Action:</b> Technical SEO audit (Core Web Vitals optimization, schema markup), built 24-article content cluster around buyer intent keywords, executed backlink outreach campaign, and implemented internal linking strategy.
+          </p>
+        </div>
+        <div>
+          <div class="case-col-label">Result</div>
+          <div class="case-metrics">
+            <div class="case-metric"><div class="case-metric-num">↑ 185%</div><div class="case-metric-label">Organic traffic (12 months)</div></div>
+            <div class="case-metric"><div class="case-metric-num">Top 15</div><div class="case-metric-label">Target keywords ranking</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div>
+          <div class="case-title">Real Estate Lead Generation</div>
+          <div class="case-client">Property Developer · Meta Ads + Retargeting</div>
+        </div>
+        <div class="case-badge">⊙ CONVERSION</div>
+      </div>
+      <div class="case-body">
+        <div>
+          <div class="case-col-label">Objective → Action</div>
+          <p class="case-text">
+            <b>Objective:</b> Scale qualified leads while managing CPL below ₹120.
+            <br><br>
+            <b>Action:</b> Built parallel funnel (awareness + consideration + conversion), ran A/B tests on 12 creative variants, segmented audiences by property type, and set up 5-tier retargeting sequence based on engagement depth.
+          </p>
+        </div>
+        <div>
+          <div class="case-col-label">Result</div>
+          <div class="case-metrics">
+            <div class="case-metric"><div class="case-metric-num">↓ 38%</div><div class="case-metric-label">Cost per acquisition</div></div>
+            <div class="case-metric"><div class="case-metric-num">12k+</div><div class="case-metric-label">Qualified leads (6 months)</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="case">
+      <div class="case-head">
+        <div>
+          <div class="case-title">SaaS Trial Conversion Optimization</div>
+          <div class="case-client">B2B SaaS Platform · Google Ads + Analytics</div>
+        </div>
+        <div class="case-badge">📊 OPTIMIZATION</div>
+      </div>
+      <div class="case-body">
+        <div>
+          <div class="case-col-label">Objective → Action</div>
+          <p class="case-text">
+            <b>Objective:</b> Increase trial-to-paid conversion rate from 8% to 15%+.
+            <br><br>
+            <b>Action:</b> Implemented GA4 event tracking across conversion funnel, identified drop-off points, A/B tested landing pages (3 variants), refined keyword targeting to higher intent, and built automated nurture sequence.
+          </p>
+        </div>
+        <div>
+          <div class="case-col-label">Result</div>
+          <div class="case-metrics">
+            <div class="case-metric"><div class="case-metric-num">↑ 89%</div><div class="case-metric-label">Trial-to-paid rate</div></div>
+            <div class="case-metric"><div class="case-metric-num">↓ 26%</div><div class="case-metric-label">CAC (optimized spend)</div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="sec-eyebrow">Credentials</span>
+      <h2 class="sec-title">Certifications & Skills</h2>
+      <p class="sec-sub">Proven expertise. Continuous learning.</p>
+    </div>
+    <div class="cert-grid">
+      <div class="cert"><div class="cert-mark">G</div><div><div class="cert-name">Google Ads Certification</div><div class="cert-meta">Google Skillshop · 2024</div></div></div>
+      <div class="cert"><div class="cert-mark">M</div><div><div class="cert-name">Meta Certified Digital Marketing Associate</div><div class="cert-meta">Meta Blueprint · 2024</div></div></div>
+      <div class="cert"><div class="cert-mark">A</div><div><div class="cert-name">Google Analytics 4 Certification</div><div class="cert-meta">Google Skillshop · 2024</div></div></div>
+      <div class="cert"><div class="cert-mark">S</div><div><div class="cert-name">SEO & Technical Marketing Fundamentals</div><div class="cert-meta">Completed · 2023</div></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <div class="contact-title">Let's build <span>measurable growth.</span></div>
+    <p class="contact-sub">Open to full-time digital marketing roles across Delhi NCR and Haryana — on-site, hybrid, or remote. I'm ready to bring strategic thinking and data discipline to your team.</p>
+    <div class="contact-cards">
+      <div class="ccard">
+        <div class="ccard-label">Email</div>
+        <div class="ccard-val">
+          <a href="mailto:sahilsaini.2k1@gmail.com">sahilsaini.2k1@gmail.com</a>
+        </div>
+      </div>
+      <div class="ccard">
+        <div class="ccard-label">LinkedIn</div>
+        <div class="ccard-val">
+          <a href="https://linkedin.com/in/sahil-saini-2b3192194" target="_blank">linkedin.com/in/sahil-saini</a>
+        </div>
+      </div>
+      <div class="ccard">
+        <div class="ccard-label">Location</div>
+        <div class="ccard-val">Greater Delhi Area, India</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>SAHIL SAINI · DIGITAL MARKETING STRATEGIST · DATA-DRIVEN GROWTH · 2025</footer>
+
+<script>
+  // Fade-up animation on scroll
+  const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{ if(e.isIntersecting) e.target.classList.add('visible'); });
+  }, {threshold:0.15});
+  document.querySelectorAll('.fade-up').forEach(el=>observer.observe(el));
+
+  // Smooth scroll offset for fixed nav
+  document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+    anchor.addEventListener('click', function(e){
+      const target = document.querySelector(this.getAttribute('href'));
+      if(target){
+        e.preventDefault();
+        target.scrollIntoView({behavior:'smooth', block:'start'});
+        setTimeout(()=>{
+          window.scrollBy(0, -70);
+        }, 10);
+      }
+    });
+  });
+</script>
+</body>
+</html>
